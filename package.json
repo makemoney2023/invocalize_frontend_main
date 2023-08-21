@@ -1,0 +1,58 @@
+{
+  "name": "openai-template",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "^1.4.1",
+    "@heroicons/react": "^1.0.3",
+    "@uiw/react-textarea-code-editor": "^1.3.1",
+    "axios": "^0.21.1",
+    "bad-words": "^3.0.4",
+    "fuzzyset": "^1.0.6",
+    "mobx": "^6.3.2",
+    "mobx-react": "^7.2.0",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.2",
+    "react-countdown": "^2.3.2",
+    "react-dom": "17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
+    "react-textarea-autosize": "^8.3.3",
+    "react-typist": "2.0.5",
+    "styled-components": "^5.3.0",
+    "tailwindcss": "^2.2.7",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "react": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "deploy": "yarn build && gcloud app deploy",
+    "eject": "react-scripts eject",
+    "clean-build": "rm -rf yarn.lock && rm -rf node_modules && yarn && yarn build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.8"
+  }
+}
